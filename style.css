@@ -5,6 +5,7 @@ TO DO:
 - media queries
 - LOGO do menu
 - napisać README
+- poprawić nawigację
 
 */
 :root {
@@ -42,14 +43,12 @@ body {
 }
 
 nav {
-    background-color: var(--main-color-opaque);
-    
-    height: 2.2rem;
+    background-color: var(--main-color-opaque); 
     min-width: 100%;
+    min-height: 2.2rem;
 }
 
 nav a {
-    min-width: 200px;;
     text-decoration: none;
     font-size: 1.5rem;
     padding: 0.5rem;
@@ -167,7 +166,7 @@ section {
 
 
 h1 {
-    padding: 1rem;
+    padding: 3rem;
     font-family: var(--second-font-family), cursive;
 }
 h2 {
@@ -254,3 +253,21 @@ input[type=submit] {
     width: 10rem;
 }
 
+/* media queries  */
+
+@media (max-width: 600px) {
+    .navbar{
+        flex-direction: column;
+        flex-wrap: wrap;
+      }
+      .navbar a {
+        text-align: center;
+        min-width: 100vh;
+      }
+
+  }
+  @media (max-width: 500px) {
+    .contact-form input, textarea {
+        width: 80%;
+    }
+  }

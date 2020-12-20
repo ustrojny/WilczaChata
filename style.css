@@ -191,12 +191,13 @@ h2 {
     color: var(--second-color);
 }
 
+
 footer {
     position: absolute;
     bottom: 0;
     width: 100%;
     background-color: var(--main-color);
-    height: 2rem;
+    height: 2.5rem;
     color: white;
     text-align: center;
     padding: 0.5rem;
@@ -251,6 +252,11 @@ footer {
 
 input[type=submit] {
     width: 10rem;
+}
+
+input[type=submit]:hover {
+    color: white;
+    background-color: var(--main-color)
 }
 
 /* media queries  */

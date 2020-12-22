@@ -2,9 +2,9 @@
 
 ## Projekt HTML & CSS — Wizytówka / Portfolio
 
-**Projekt strony internetowej dla agroturystyki Wilcza Chata** 
+### LIVE DEMO: [Wilcza Chata](https://ulawilk.github.io/CodersCamp2020.Project.HTML-CSS.BusinessCard/)
 
-LIVE DEMO: [Wilcza Chata](https://ulawilk.github.io/CodersCamp2020.Project.HTML-CSS.BusinessCard/)
+**Projekt strony internetowej dla agroturystyki Wilcza Chata** 
 
 Niniejsza strona to wizytówka agroturystyki Wilcza Chata w Beskidach. Projekt ma na celu zachęcić klientów do odwiedzenia tego miejsca, poprzez prezentację jego unikatowych walorów. Projekt uwzględnia podstawowe zasady dostępności oraz jest responsywny.
 Kolorystka projektu nawiązuje do kolorów natury - brązu i zieleni. Dzięki zastosowaniu zmiennych CSS możemy w łatwy sposób dostosować projekt do własnych upodobań kolorystycznych.
@@ -31,9 +31,7 @@ Na stronie zaprezentowane zostały główne atrakcje tego miejsca, a także cenn
 - Accessibility developers tools & Lighthouse do oceny dostępności (accessibility)
 - ImageOptim do zmniejszenia wielkości obrazów
 
-
-
-#### W celu zapewnienia dostępności strony:
+### W celu zapewnienia dostępności strony:
 - stosowałam semantyczny HTML
 - zastosowałam kontrastowe kolory
 - dodałam elementy label do pól formularza
@@ -42,20 +40,20 @@ Na stronie zaprezentowane zostały główne atrakcje tego miejsca, a także cenn
 ### Raport z Lighthouse
 ![Lighthouse Report](images/readme-images/LightHouseReport.png "Raport z Lightouse")
 
-#### W celu zapewnienia responsywności strony:
+### W celu zapewnienia responsywności strony:
 - zastosowałam jednostki relatywne (rem)
 - wykorzystałam Flexboxa
 - użyłam media queries
 
 Strona wyświetla się poprawnie na różnych rozdzielczościach ekranów:
-##### Desktop:
+#### Desktop:
 ![DesktopView](images/readme-images/DesktopView.png "Desktop")
 
-##### Tablet:
+#### Tablet:
 ![iPadView](images/readme-images/iPadView.png "iPad View")
 
-##### Mobile:
+#### Mobile:
 ![MobileView](images/readme-images/MobileView.png "Mobile View")
 
-### Zdjęcia 
+#### Zdjęcia 
 - Zdjęcia wykorzystane na stronie pochodzą z serwisu [Unsplash](https://unsplash.com/) (zdjęcie w tle) oraz ze strony mojego ulubionego górskiego fotografa Crisa Froese (zdjęcia w galerii). Zachęcam do wizyty na [jego stronie](https://crisfroesepics.com/).

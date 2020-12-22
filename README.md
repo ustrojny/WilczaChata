@@ -2,11 +2,13 @@
 
 ## Projekt HTML & CSS — Wizytówka / Portfolio
 
-**Projekt strony internetowej agroturystyki Wilcza Chata** 
+**Projekt strony internetowej dla agroturystyki Wilcza Chata** 
 
 LIVE DEMO: [Wilcza Chata](https://ulawilk.github.io/CodersCamp2020.Project.HTML-CSS.BusinessCard/)
+
 Niniejsza strona to wizytówka agroturystyki Wilcza Chata w Beskidach. Projekt ma za cel zachęcić klientów do odwiedzenia tego miejsca, poprzez prezentację jego unikatowych walorów. Projekt uwzględnia podstawowe zasady dostępności oraz jest responsywny.
-Kolorystka projektu nawiązauje do kolorów natury - brąz i zieleń.
+Kolorystka projektu nawiązuje do kolorów natury - brąz i zieleń.
+Na stronie zaprezentowane zostały główne atrakcje tego miejsca, a także cennik. Dostępny jest również formularz kontaktowy.
 
 ### W projekcie została zaprezentowana praktyczna znajomość poniższych zagadnień związanych z HTML & CSS:
 - Box-model
@@ -23,16 +25,13 @@ Kolorystka projektu nawiązauje do kolorów natury - brąz i zieleń.
 - Formularz
 - Responsive Web Design
 
-### Wykorzystane narzędzia zewnętrzne / technologie:
+### Wykorzystane narzędzia zewnętrzne:
 - Google Fonts (Open Sans, Caveat)
 - Font Awesome (ikona drzewa)
 - Accessibility developers tools & Lighthouse do oceny dostępności (accessibility)
 - ImageOptim do zmniejszenia wielkości obrazów
 
-#### W celu zapewnienia responsywności strony:
-- zastosowałam jednostki relatywne (rem)
-- wykorzystałam Flexboxa
-- użyłam media queries
+
 
 #### W celu zapewnienia dostępności strony:
 - stosowałam semantyczny HTML
@@ -40,5 +39,23 @@ Kolorystka projektu nawiązauje do kolorów natury - brąz i zieleń.
 - dodałam elementy label do pól formularza
 - użyłam aria-label do oznaczenia formularza kontaktowego oraz linku powrotu do góry strony
 
-#### Raport z Lighthouse
-![Lighthouse Report](LightHouseReport.png "Raport z Lightouse")
+### Raport z Lighthouse
+![Lighthouse Report](images/readme-images/LightHouseReport.png "Raport z Lightouse")
+
+#### W celu zapewnienia responsywności strony:
+- zastosowałam jednostki relatywne (rem)
+- wykorzystałam Flexboxa
+- użyłam media queries
+
+Strona wyświetla się poprawnie na różnych rozdzielczościach ekranów:
+##### Desktop:
+![DesktopView](images/readme-images/DesktopView.png "Desktop")
+
+##### Tablet:
+![iPadView](images/readme-images/iPadView.png "iPad View")
+
+##### Mobile:
+![MobileView](images/readme-images/MobileView.png "Mobile View")
+
+### Zdjęcia 
+- Zdjęcia wykorzystane na stronie pochodzą z serwisu [Unsplash](https://unsplash.com/) (zdjęcie w tle) oraz ze strony mojego ulubionego górskiego fotografa Crisa Froese (zdjęcia w galerii). Zachęcam do wizyty na [jego stronie](https://crisfroesepics.com/).

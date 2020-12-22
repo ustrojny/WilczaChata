@@ -37,7 +37,7 @@ Na stronie zaprezentowane zostały główne atrakcje tego miejsca, a także cenn
 - dodałam elementy label do pól formularza
 - użyłam aria-label do oznaczenia formularza kontaktowego oraz linku powrotu do góry strony
 
-### Raport z Lighthouse
+#### Raport z Lighthouse
 ![Lighthouse Report](images/readme-images/LightHouseReport.png "Raport z Lightouse")
 
 ### W celu zapewnienia responsywności strony:
@@ -55,5 +55,5 @@ Strona wyświetla się poprawnie na różnych rozdzielczościach ekranów:
 #### Mobile:
 ![MobileView](images/readme-images/MobileView.png "Mobile View")
 
-#### Zdjęcia 
+### Zdjęcia 
 - Zdjęcia wykorzystane na stronie pochodzą z serwisu [Unsplash](https://unsplash.com/) (zdjęcie w tle) oraz ze strony mojego ulubionego górskiego fotografa Crisa Froese (zdjęcia w galerii). Zachęcam do wizyty na [jego stronie](https://crisfroesepics.com/).

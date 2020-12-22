@@ -195,7 +195,6 @@ section {
 .gallery-container img:hover {
     -webkit-transform: scale(1.05);
     transform: scale(1.05);
-    -webkit-transition: all 0.8s ease-in-out;
     transition: all 0.5s ease-in-out;
 }
 
@@ -236,7 +235,10 @@ footer a, a:visited {
     text-decoration: none;
     color: var(--accent-color);
 }
-
+.contact-form label {
+    display: block;
+    float: none;
+}
 .contact-form input,
 textarea {
     padding: 0.5rem;
@@ -254,6 +256,8 @@ textarea {
 
 input[type=submit] {
     width: 10rem;
+    display: block;
+    margin: 0 auto;
 }
 
 input[type=submit]:hover {

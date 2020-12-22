@@ -6,9 +6,9 @@
 
 LIVE DEMO: [Wilcza Chata](https://ulawilk.github.io/CodersCamp2020.Project.HTML-CSS.BusinessCard/)
 
-Niniejsza strona to wizytówka agroturystyki Wilcza Chata w Beskidach. Projekt ma za cel zachęcić klientów do odwiedzenia tego miejsca, poprzez prezentację jego unikatowych walorów. Projekt uwzględnia podstawowe zasady dostępności oraz jest responsywny.
-Kolorystka projektu nawiązuje do kolorów natury - brąz i zieleń.
-Na stronie zaprezentowane zostały główne atrakcje tego miejsca, a także cennik. Dostępny jest również formularz kontaktowy.
+Niniejsza strona to wizytówka agroturystyki Wilcza Chata w Beskidach. Projekt ma na celu zachęcić klientów do odwiedzenia tego miejsca, poprzez prezentację jego unikatowych walorów. Projekt uwzględnia podstawowe zasady dostępności oraz jest responsywny.
+Kolorystka projektu nawiązuje do kolorów natury - brązu i zieleni. Dzięki zastosowaniu zmiennych CSS możemy w łatwy sposób dostosować projekt do własnych upodobań kolorystycznych.
+Na stronie zaprezentowane zostały główne atrakcje tego miejsca, a także cennik oraz galeria. Dostępny jest również formularz kontaktowy (podstawowa walidacja pól tekstowych i adresu e-mail).
 
 ### W projekcie została zaprezentowana praktyczna znajomość poniższych zagadnień związanych z HTML & CSS:
 - Box-model

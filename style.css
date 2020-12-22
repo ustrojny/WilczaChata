@@ -231,14 +231,17 @@ footer {
     padding: 0.5rem 0;
 }
 
-footer a, a:visited {
+footer a,
+a:visited {
     text-decoration: none;
     color: var(--accent-color);
 }
+
 .contact-form label {
     display: block;
     float: none;
 }
+
 .contact-form input,
 textarea {
     padding: 0.5rem;

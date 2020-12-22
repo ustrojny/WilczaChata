@@ -14,7 +14,7 @@
     <meta name="description" content="Wilcza Chata - Twoje wymarzone miejsce w górach!">
 </head>
 
-<body  data-spy="scroll" data-target="#main-nav">
+<body>
     <div class="navbar">
     <nav id="main-nav">
         <a href="#home">Home</a>
@@ -26,9 +26,9 @@
     </nav>
 </div>
     <main>
-        <section id="home">
+        <section id="home" class="home">
                 <h1>Witaj Wędrowcze!</h1>
-                <div class="home-container fadeInLeft">
+                <div class="home-container">
                 <h2>Wilczyce to beskidzka wieś z malowniczymi widokami. Położona w otoczeniu gór i lasów i krystalicznie czystego jeziora, wyróżnia się czystym powietrzem i wyjątkowym mikroklimatem. Zapraszamy do wypoczynku w tym wyjątkowym miejscu!</h2>
             </div>
         </section>
@@ -64,9 +64,9 @@
         <section id="gallery">
             <h2>Galeria</h2>
             <div class="gallery-container">
-                <img src="narty2.png" alt="Narciarz. Autor: Cris Froese">
+                <img src="narciarz.jpg" alt="Aktywny wypoczynek na nartach. Autor: Cris Froese">
                 <img src="jezioro.jpg" alt="Wypoczynek nad jeziorem. Autor: Cris Froese">
-                <img src="drzewo.jpg" alt="Drzewo. Autor: Cris Froese">
+                <img src="drzewo.jpg" alt="Drzewo w starym lesie. Autor: Cris Froese">
 
             </div>
         </section>
@@ -84,24 +84,30 @@
                 <li>Wyprawy psimi zaprzęgami</li>
                 <li>Wycieczki przyrodnicze z przewodnikiem</li>
             </ul>
-            <a href="#home"><i class="fas fa-tree tree-icon"></i><i class="fas fa-tree tree-icon"></i><i class="fas fa-tree tree-icon"></i></a>
+            <a href="#home" aria-label="Przewiń do góry strony" class="tree-icons"><i class="fas fa-tree tree-icon"></i><i class="fas fa-tree tree-icon"></i><i class="fas fa-tree tree-icon"></i></a>
         </section>
         <section id="contact">
             <h2>Kontakt</h2>
-            <form class="contact-form">
-                <input type="text" name="name" placeholder="Imię i nazwisko"></input>
+            <form class="contact-form" aria-label="Formularz kontaktowy">
+                <label for="name">Imię i nazwisko</label>
                 <br>
-                <textarea name="message" placeholder="Wpisz swoją wiadomość..."></textarea>
+                <input type="text" name="name" placeholder="Imię i nazwisko" minlength="3" required>
+                <br>
+                <label for="mail">E-mail</label>
+                <br>
+                <input type="email" name="email" id="mail" placeholder="e-mail" required/>
+                <br>
+                <label for="message">Wiadomość</label>
+                <br>
+                <textarea name="message" id="message" placeholder="Wpisz swoją wiadomość..." minlength="5" required></textarea>
                 <br>
                 <input type="submit" value="Wyślij">
             </form>
         </section>
-        
-
     </main>
     <footer>
         <p>Copyright <i class="fas fa-paw"></i> Ula Wilk 2020</p>
-        <p>Zdjęcia: <a href="https://crisfroesepics.com/" target="_blank">Cris Froese</a> & <a href="https://unsplash.com/">Unsplash</a></p>
+        <p>Zdjęcia: <a href="https://crisfroesepics.com/" target="_blank">Cris Froese</a> & <a href="https://unsplash.com/" target="_blank">Unsplash</a></p>
     </footer>
 
 

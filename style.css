@@ -1,25 +1,25 @@
 /*
 TO DO:
 - responsywny widok menu nawigacji - media queries?
-- Position (absolute, relative)
-- media queries
 - LOGO do menu
 - napisać README
 - poprawić nawigację
-
 */
 :root {
     --main-color: rgb(54, 4, 7);
     --main-color-opaque: rgba(54, 4, 7, 0.8);
+    --contrast-to-main-color: rgb(255, 255, 255);
+    --accent-color: rgb(255, 187, 98);
     --second-color: rgb(0, 92, 18);
     --main-font-family: 'Open Sans';
     --second-font-family: 'Caveat';
-  }
+}
 
 * {
     margin: 0;
     padding: 0;
 }
+
 html {
     scroll-behavior: smooth;
 }
@@ -31,60 +31,108 @@ body {
     box-sizing: border-box;
 }
 
+section {
+    padding: 2rem;
+    text-align: center;
+}
+
 .navbar {
     display: flex;
     overflow: hidden;
-    position: fixed; 
-    top: 0; 
-    width: 100%; 
+    position: fixed;
+    top: 0;
+    width: 100%;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: flex-start;
     z-index: 2;
 }
 
 nav {
-    background-color: var(--main-color-opaque); 
+    background-color: var(--main-color-opaque);
     min-width: 100%;
-    min-height: 2.2rem;
+    min-height: 2.4rem;
+    
 }
 
 nav a {
     text-decoration: none;
     font-size: 1.5rem;
+    letter-spacing: 2px;
     padding: 0.5rem;
-    color: rgb(255, 255, 255);
+    color: var(--contrast-to-main-color);
 }
 
 nav a:visited {
-    color: rgb(255, 255, 255);
+    color: var(--contrast-to-main-color);
 }
 
 nav a:hover {
-    color: rgb(168, 95, 0);;
+    color: var(--accent-color)
 }
-#home {
-    margin-top: 2rem;
+
+.home {
     min-height: 100vh;
     background-image: url("background2.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-#home h1 {
+.home h1 {
     font-size: 3rem;
     text-align: center;
 }
 
+h1 {
+    padding: 3rem;
+    font-family: var(--second-font-family), cursive;
+}
+
+h2 {
+    padding-bottom: 1rem;
+}
+
 .home-container {
-    background-color: rgba(255,255,255, 0.5);
+    background-color: rgba(255, 255, 255, 0.5);
     max-width: 70%;
     margin: 0 auto;
     text-align: center;
     border-radius: 10px;
     padding: 1rem;
-
+    -webkit-animation-name: fadeInLeft;
+    animation-name: fadeInLeft;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
 }
 
+@-webkit-keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(-100%, 0, 0);
+        transform: translate3d(-100%, 0, 0);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(-100%, 0, 0);
+        transform: translate3d(-100%, 0, 0);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
 
 .price-container {
     display: flex;
@@ -97,57 +145,59 @@ nav a:hover {
     background-color: var(--main-color);
     margin: 1rem;
     padding: 1rem;
-    color: white;
+    color: var(--contrast-to-main-color);
     text-align: center;
 }
 
 .price-card:hover {
     -webkit-animation-name: pulse;
     animation-name: pulse;
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
-    }
-    @-webkit-keyframes pulse {
-    0% {
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
-    }
-    50% {
-    -webkit-transform: scale3d(1.05, 1.05, 1.05);
-    transform: scale3d(1.05, 1.05, 1.05);
-    }
-    100% {
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
-    }
-    }
-    @keyframes pulse {
-    0% {
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
-    }
-    50% {
-    -webkit-transform: scale3d(1.05, 1.05, 1.05);
-    transform: scale3d(1.05, 1.05, 1.05);
-    }
-    100% {
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
-    }
-    } 
-
-section {
-    padding: 2rem;
-    text-align: center;
 }
-.gallery-container  {
+
+@-webkit-keyframes pulse {
+    0% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+
+    50% {
+        -webkit-transform: scale3d(1.05, 1.05, 1.05);
+        transform: scale3d(1.05, 1.05, 1.05);
+    }
+
+    100% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+
+    50% {
+        -webkit-transform: scale3d(1.05, 1.05, 1.05);
+        transform: scale3d(1.05, 1.05, 1.05);
+    }
+
+    100% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+.gallery-container {
     display: flex;
     flex-wrap: wrap;
     overflow: hidden;
-
 }
+
 .gallery-container img {
     flex: 1 250px;
     width: 30%;
@@ -155,22 +205,11 @@ section {
     display: block;
 }
 
-/*hover zakrywa menu */
-
 .gallery-container img:hover {
     -webkit-transform: scale(1.05);
-            transform: scale(1.05);
+    transform: scale(1.05);
     -webkit-transition: all 0.8s ease-in-out;
     transition: all 0.5s ease-in-out;
-}
-
-
-h1 {
-    padding: 3rem;
-    font-family: var(--second-font-family), cursive;
-}
-h2 {
-    padding-bottom: 1rem;
 }
 
 .attractions {
@@ -185,12 +224,16 @@ h2 {
 .attractions li:hover {
     color: var(--second-color);
     font-weight: bold;
-} 
-.tree-icon
-{
-    color: var(--second-color);
 }
 
+.tree-icons:hover {
+    color: var(--accent-color);
+
+}
+
+.tree-icon {
+    color: var(--second-color);
+}
 
 footer {
     position: absolute;
@@ -198,51 +241,27 @@ footer {
     width: 100%;
     background-color: var(--main-color);
     height: 2.5rem;
-    color: white;
+    color: var(--contrast-to-main-color);
     text-align: center;
     padding: 0.5rem;
 }
+footer a {
+    text-decoration: none;
+}
 
+footer a:visited {
+    color: var(--accent-color);
+    
+}
 
-.fadeInLeft {
-    -webkit-animation-name: fadeInLeft;
-    animation-name: fadeInLeft;
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-    }
-    @-webkit-keyframes fadeInLeft {
-    0% {
-    opacity: 0;
-    -webkit-transform: translate3d(-100%, 0, 0);
-    transform: translate3d(-100%, 0, 0);
-    }
-    100% {
-    opacity: 1;
-    -webkit-transform: none;
-    transform: none;
-    }
-    }
-    @keyframes fadeInLeft {
-    0% {
-    opacity: 0;
-    -webkit-transform: translate3d(-100%, 0, 0);
-    transform: translate3d(-100%, 0, 0);
-    }
-    100% {
-    opacity: 1;
-    -webkit-transform: none;
-    transform: none;
-    }
-    } 
-.contact-form input, textarea {
+.contact-form input,
+textarea {
     padding: 0.5rem;
     margin: 0.5rem;
     border: 2px solid var(--main-color);
-    border-radius:10px;
+    border-radius: 10px;
     font-family: var(--main-font-family);
-    box-shadow: 8px 8px 10px 0px var(--main-color-opaque);;
+    box-shadow: 8px 8px 10px 0px var(--main-color-opaque);
     width: 25rem;
 }
 
@@ -255,25 +274,36 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-    color: white;
+    color: var(--contrast-to-main-color);
     background-color: var(--main-color)
 }
 
 /* media queries  */
 
-@media (max-width: 600px) {
-    .navbar{
+@media all and (max-width: 600px) {
+    .navbar {
         flex-direction: column;
         flex-wrap: wrap;
-      }
-      .navbar a {
+    }
+
+    .navbar a {
         text-align: center;
         min-width: 100vh;
-      }
+    }
 
-  }
-  @media (max-width: 500px) {
-    .contact-form input, textarea {
+}
+
+@media all and (max-width: 500px) {
+
+    .contact-form input,
+    textarea {
         width: 80%;
     }
-  }
+}
+
+@media all and (max-width: 400px) {
+    nav a {
+        font-size: 1.2rem;
+        letter-spacing: 1px;
+    }
+}

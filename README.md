@@ -1,6 +1,5 @@
-# CodersCamp 2020 - Projekt HTML & CSS
 
-## Projekt HTML & CSS — Wizytówka / Portfolio
+# Projekt HTML & CSS — Wizytówka 
 
 ### LIVE DEMO: [Wilcza Chata](https://ustrojny.github.io/WilczaChata/)
 

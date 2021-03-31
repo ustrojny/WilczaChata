@@ -2,7 +2,7 @@
 
 ## Projekt HTML & CSS — Wizytówka / Portfolio
 
-### LIVE DEMO: [Wilcza Chata](https://ulawilk.github.io/WilczaChata/)
+### LIVE DEMO: [Wilcza Chata](https://ustrojny.github.io/WilczaChata/)
 
 **Projekt strony internetowej dla agroturystyki Wilcza Chata** 
 
